@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>无糖Kel</title>
+  
+  
+  <link href="https://wutangkel.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://wutangkel.github.io/"/>
+  <updated>2022-08-02T16:38:50.172Z</updated>
+  <id>https://wutangkel.github.io/</id>
+  
+  <author>
+    <name>无糖Kel</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Win10 Tim个人数据设置自定义路径失败</title>
+    <link href="https://wutangkel.github.io/2022/TimSetCustomPathFail/"/>
+    <id>https://wutangkel.github.io/2022/TimSetCustomPathFail/</id>
+    <published>2022-08-02T15:52:41.000Z</published>
+    <updated>2022-08-02T16:38:50.172Z</updated>
+    
+    <content type="html"><![CDATA[<p>由于C盘容量不足，查了一下占用资源，发现Tim个人数据占了10+G，本来只是迁移一下存储路径就行了，但是发现修改之后Tim提示:<code>保存路径无效，你没有权限在此写入数据，请重新选择</code>,特此记录一下解决办法。<br><img src="/../img/TimSetCustomPathFail/%E4%BF%9D%E5%AD%98%E5%A4%B1%E8%B4%A5.png" alt="设置个人数据路径失败"></p><p>首先先退出Tim，然后把默认路径<code>C:\Users\用户名\Documents\Tencent Files</code>下的数据手动拷贝到想要迁移的路径。<br><img src="/../img/TimSetCustomPathFail/%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84.png" alt="默认路径"></p><p>再后打开<code>C:\Users\Public\Documents\Tencent\QQ\UserDataInfo.ini</code>Tim配置，把<code>UserDataSavePathType</code>值改为2，<code>UserDataSavePath</code>值设置为迁移路径。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[UserDataSet]</span><br><span class="line">UserDataSavePathType=2</span><br><span class="line">UserDataSavePath=D:\Software\Tim\TencentFiles</span><br></pre></td></tr></table></figure><p>至此，就完成了所有配置，重新打开Tim设置就可以看到个人数据的保存路径已经修改成功了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;由于C盘容量不足，查了一下占用资源，发现Tim个人数据占了10+G，本来只是迁移一下存储路径就行了，但是发现修改之后Tim提示:&lt;code&gt;保存路径无效，你没有权限在此写入数据，请重新选择&lt;/code&gt;,特此记录一下解决办法。&lt;br&gt;&lt;img src=&quot;/../img/Ti</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
